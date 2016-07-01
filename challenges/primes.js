@@ -29,3 +29,36 @@ function isPrime(number) {
   }
 
 }
+
+Problem 2
+
+ var array =[];
+
+function isPrime(number) {
+  var primeness=0;
+  for (i=2; i<number; i++){
+    factortest = number % i;
+    if (factortest==0){
+      primeness=1;
+    }
+
+  }
+  if (primeness==1){
+        return false;
+  }
+  else {
+        return true;
+  }
+
+}
+
+
+ function primes(max) {
+
+      for (i=2; i<=max; i++){
+        if (isPrime(i)){
+          array.push(i);
+        }
+      }
+
+ };
