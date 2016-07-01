@@ -10,3 +10,22 @@
 */
 
 // YOUR CODE HERE
+
+
+function isPrime(number) {
+  var primeness=0;
+  for (i=2; i<number; i++){
+    factortest = number % i;
+    if (factortest==0){
+      primeness=1;
+    }
+
+  }
+  if (primeness==1){
+        console.log("This number is not prime!")
+  }
+  else {
+        console.log("Congrats ma'am THIS NUMBER IS PRIME!")
+  }
+
+}
