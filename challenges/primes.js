@@ -55,7 +55,7 @@ function isPrime(number) {
 
  function primes(max) {
 
-      for (i=2; i<=max; i++){
+      for (i=1; i<=max; i++){
         if (isPrime(i)){
           array.push(i);
         }
